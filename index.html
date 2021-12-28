@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">	
+	<title>Proyecto Calculadora</title>
+	<link rel="icon" href="calculator-solid.svg">
+</head>
+<body>
+	<h1>Realiza tus calculos aqui:</h1>
+	<div class="container">
+		<div class="pantalla">
+			<p class="pantalla-numero" id="resultado">0</p>
+		</div>
+		<div class="numeros">
+			<div class="siete" id="siete">7</div>
+			<div class="ocho" id="ocho">8</div>
+			<div class="nueve" id="nueve">9</div>
+			<div class="cuatro" id="cuatro">4</div>
+			<div class="cinco" id="cinco">5</div>
+			<div class="seis" id="seis">6</div>
+			<div class="uno" id="uno">1</div>
+			<div class="dos" id="dos">2</div>
+			<div class="tres" id="tres">3</div>
+			<div class="cero" id="cero">0</div>
+			<div class="clear" id="clear">C</div>
+		</div>
+		<div class="operaciones">
+			<div class="suma" id="suma">+</div>
+			<div class="resta" id="resta">-</div>
+			<div class="multiplicacion" id="multiplicacion">*</div>
+			<div class="division" id="division">/</div>
+			<div class="igual" id="igual">=</div>
+		</div>
+	</div>
+	<script src="calculos.js"></script>
+</body>
+</html>

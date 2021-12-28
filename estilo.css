@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-image: url(./103.jpg);
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 5%;
+}
+
+.container {
+	margin: 3% auto;
+	padding: 18px;
+	height: 60vh;
+	width: 30vw;
+	display: grid;
+	grid-template-rows: 15vh auto;
+	grid-template-columns: 6vw 10vw;
+	grid-column-gap: 1vw;
+	border-radius: 10px;
+	background-color: #000;
+}
+
+.pantalla {
+	margin-bottom: 5%;
+	grid-column: 1 / 4;
+	background-color: #ede9e1;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.pantalla-numero {
+	margin: 5%;
+	color: #000;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: right;
+}
+
+.numeros {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	text-align: center;
+	grid-column-gap: 4%;
+	grid-row-gap: 4%;
+	grid-column: 1 / 3;
+}
+
+.uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho, .nueve, .cero, .clear {
+	padding-top: 2.5vh;
+	font-size: 1.3em;
+	font-weight: 500;
+	border-radius: 25%;
+	background-color: #757575;
+	color: #fff;
+	user-select: none;
+}
+
+.uno:active, .dos:active, .tres:active, .cuatro:active, .cinco:active, .seis:active, .siete:active, .ocho:active, .nueve:active, .cero:active, .clear:active {
+	background-color: #959595;
+}
+
+.clear {
+	grid-column: 2 / 4;
+}
+
+.operaciones {
+	display: grid;
+	grid-template-columns: auto auto;
+	text-align: center;
+	grid-column-gap: 10%;
+	grid-row-gap: 4%;
+	grid-column: 3 / 4;
+}
+
+.suma {
+	grid-row: 2 / 4;
+	padding-top: 8vh;	
+	font-size: 1em;
+	font-weight: 500;
+	border-radius: 5%;	
+	background-color: darkorange;
+	color: #fff;
+	user-select: none;	
+}
+
+.resta, .multiplicacion, .division, .igual {
+	padding-top: 4vh;	
+	font-size: 1em;
+	font-weight: 500;
+	border-radius: 5%;	
+	background-color: darkorange;
+	color: #fff;
+	user-select: none;	
+}
+
+.suma:active, .resta:active, .multiplicacion:active, .division:active, .igual:active {
+	background-color: orange;
+}
